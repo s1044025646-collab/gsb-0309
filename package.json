@@ -1,0 +1,25 @@
+{
+  "name": "css-cascade-explainer",
+  "version": "1.0.0",
+  "description": "离线 CSS 作者规则层叠与继承来源解释后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "bin": {
+    "css-explain": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --disable-warning=ExperimentalWarning dist/server/index.js",
+    "dev": "node --import tsx --disable-warning=ExperimentalWarning src/server/index.ts",
+    "demo": "node --import tsx --disable-warning=ExperimentalWarning src/cli/demo.ts",
+    "test": "node --import tsx --disable-warning=ExperimentalWarning --test test/*.test.ts",
+    "cli": "node --import tsx --disable-warning=ExperimentalWarning src/cli/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

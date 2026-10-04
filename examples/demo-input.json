@@ -1,0 +1,50 @@
+{
+  "tree": [
+    { "id": "root", "tag": "div", "elementId": "page", "classes": ["wrap"], "parent": null },
+    { "id": "title", "tag": "h1", "classes": ["headline", "big"], "parent": "root" },
+    { "id": "sub", "tag": "p", "elementId": "sub", "classes": ["note"], "parent": "root" },
+    { "id": "box", "tag": "span", "classes": ["box"], "parent": "sub" }
+  ],
+  "rules": [
+    { "selector": "*", "declarations": [
+      { "property": "color", "value": "black" },
+      { "property": "opacity", "value": "0.5" },
+      { "property": "display", "value": "block" }
+    ]},
+    { "selector": "div", "declarations": [
+      { "property": "color", "value": "red !important-literal" }
+    ]},
+    { "selector": "#page", "declarations": [
+      { "property": "color", "value": "red", "important": true },
+      { "property": "font-size", "value": "20px" },
+      { "property": "text-align", "value": "center" }
+    ]},
+    { "selector": "h1.headline.big", "declarations": [
+      { "property": "color", "value": "blue" },
+      { "property": "font-size", "value": "30px" }
+    ]},
+    { "selector": ".headline", "declarations": [
+      { "property": "color", "value": "green", "important": true }
+    ]},
+    { "selector": "p.note", "declarations": [
+      { "property": "color", "value": "purple" },
+      { "property": "color", "value": "orange" }
+    ]},
+    { "selector": "span.box", "declarations": [
+      { "property": "color", "value": "teal" },
+      { "property": "display", "value": "inline-block" },
+      { "property": "opacity", "value": "1" }
+    ]}
+  ],
+  "inline": {
+    "title": {
+      "font-size": [ { "property": "font-size", "value": "40px" } ],
+      "color": [ { "property": "color", "value": "navy" } ]
+    },
+    "box": {
+      "color": [ { "property": "color", "value": "unset" } ],
+      "display": [ { "property": "display", "value": "inherit" } ],
+      "opacity": [ { "property": "opacity", "value": "initial" } ]
+    }
+  }
+}
