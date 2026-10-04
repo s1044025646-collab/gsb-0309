@@ -1,0 +1,19 @@
+{
+  "name": "css-cascade-explainer",
+  "version": "1.0.0",
+  "description": "离线 CSS 作者规则层叠与继承来源解释后端（API + CLI）",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/cascade.test.js dist/test/store.test.js",
+    "start": "npm run build && node dist/cli.js serve",
+    "demo": "npm run build && node dist/cli.js demo",
+    "cli": "npm run build && node dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}

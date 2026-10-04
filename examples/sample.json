@@ -1,0 +1,13 @@
+{
+  "elements": [
+    { "id": 1, "tag": "div", "parent": null, "classes": ["root"] },
+    { "id": 2, "tag": "p", "parent": 1, "classes": ["x", "y"] },
+    { "id": 3, "tag": "span", "parent": 2, "inline": [{ "property": "color", "value": "purple" }] }
+  ],
+  "rules": [
+    { "selector": ".root", "declarations": [{ "property": "color", "value": "green" }] },
+    { "selector": ".x", "declarations": [{ "property": "text-align", "value": "center" }] },
+    { "selector": ".y", "declarations": [{ "property": "text-align", "value": "right" }] },
+    { "selector": "p", "declarations": [{ "property": "font-size", "value": "20px", "important": true }] }
+  ]
+}
